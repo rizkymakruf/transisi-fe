@@ -1,6 +1,6 @@
 .main-container {
   display: flex;
-  background-color: #e5e7eb;
+  background-color: #f3f4f6;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -8,18 +8,19 @@
 }
 .second-container {
   display: flex;
-  padding: 1.25rem;
+  padding: 0.5rem;
   width: 75%;
   height: 75%;
   border-radius: 0.5rem;
   background-image: url(./asset/background-dark.png);
-  background-size: auto;
+  background-size: 200%;
   background-repeat: no-repeat;
-  background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 26px 40px 0 rgba(0, 0, 0, 0.19);
 }
 .left-content-container {
   width: 50%;
   height: 100%;
+  padding: 1rem;
 }
 .right-content-container {
   background-color: #ffffff;
@@ -30,7 +31,7 @@
 .top-left-content {
   display: flex;
   width: 100%;
-  height: 16.666667%;
+  height: 10%;
 }
 .list-button {
   display: flex;
@@ -42,10 +43,10 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 .mid-left-content {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   width: 100%;
-  height: 33.333333%;
+  height: 30%;
 }
 .hi-name {
   color: #ffffff;
@@ -54,34 +55,64 @@
   font-weight: 600;
 }
 .headline {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.25rem;
   color: rgba(255, 255, 255, 0.3);
+}
+@media only screen and (max-width: 768px) {
+  .hi-name {
+    color: #ffffff;
+    font-size: 1.4rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+  }
+  .headline {
+    font-size: 0.6rem;
+    line-height: 1rem;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 .search-box {
   position: relative;
   width: 100%;
 }
 .search-input {
-  padding: 0.75rem;
+  padding: 0.65rem;
   padding-left: 2.5rem;
   margin-top: 1.25rem;
   color: #ffffff;
   font-size: 0.875rem;
-  line-height: 1.25rem;
   width: 100%;
   border-radius: 0.5rem;
   background-color: rgba(255, 255, 255, 0.2);
+}
+.search-input:focus {
+  outline: none;
 }
 .search-icon {
   position: absolute;
   left: 0.75rem;
   top: 2rem;
 }
+@media only screen and (max-width: 768px) {
+  .search-input {
+    padding: 0.6rem;
+    padding-left: 2rem;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.6rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .search-icon {
+    left: 0.6rem;
+    top: 1.5rem;
+  }
+}
 .bottom-left-content {
-  padding-left: 4rem;
-  padding-right: 4rem;
-  background-color: #10b981;
+  padding-left: 3rem;
+  padding-right: 3rem;
   width: 100%;
-  height: 50%;
+  height: 59, 99999%;
 }
