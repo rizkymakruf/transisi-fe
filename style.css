@@ -161,6 +161,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .menu-box-etc {
   display: flex;
@@ -273,6 +274,7 @@
   height: 2rem;
   border-radius: 9999px;
   border-width: 2px;
+  border-color: white;
 }
 #badge-1 {
   z-index: 10;
@@ -293,11 +295,31 @@
   margin-left: -0.75rem;
   margin-left: -0.875rem;
 }
+@media only screen and (max-width: 768px) {
+  .pp-badge {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  .headline-big {
+    font-size: 1.575rem;
+  }
+  .title-line {
+    font-size: 0.5rem;
+  }
+  #badge-2 {
+    margin-left: -0.45rem;
+    margin-left: -0.575rem;
+  }
+  #badge-3 {
+    margin-left: -0.45rem;
+    margin-left: -0.575rem;
+  }
+}
 .content-list {
   display: flex;
   /* background-color: #fcd34d; */
   width: 100%;
-  height: 79.99999%;
+  height: 70.99999%;
   flex-direction: column;
 }
 .head-list {
@@ -314,6 +336,7 @@
   display: flex;
   margin-top: 0.25rem;
   flex-direction: column;
+  gap: 0.6rem;
 }
 .item {
   display: flex;
@@ -322,7 +345,7 @@
 }
 /* The container */
 .check {
-  display: block;
+  /* display: block; */
   position: relative;
   padding-left: 30px;
   cursor: pointer;
@@ -330,6 +353,23 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  display: flex;
+  color: #6b7280;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .check {
+    line-height: 0.8rem;
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+  }
+  .list {
+    gap: 0.4rem;
+  }
 }
 
 /* Hide the browser's default checkbox */
@@ -346,8 +386,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   background-color: #eee;
   border-radius: 100%;
 }
@@ -359,7 +399,7 @@
 
 /* When the checkbox is checked, add a blue background */
 .check input:checked ~ .checkmark {
-  background-color: #2196f3;
+  background-color: #57b4ff;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -376,13 +416,74 @@ input:checked ~ .checkmark:after {
 
 /* Style the checkmark/indicator */
 .check .checkmark:after {
-  left: 6px;
+  left: 5px;
   top: 4px;
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border: solid white;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(40deg);
   -ms-transform: rotate(40deg);
   transform: rotate(40deg);
+}
+.title-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.white-badge {
+  position: absolute;
+  top: -0.25rem;
+  right: -0.25rem;
+  background-color: #ffffff;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  border-width: 2px;
+  border-color: #525761;
+}
+.status-badge {
+  display: flex;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  font-size: 0.5rem;
+  line-height: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  border-radius: 9999px;
+}
+#approved {
+  color: #10b981;
+  background-color: rgba(16, 185, 129, 0.3);
+}
+#inprogress {
+  color: #3b82f6;
+  background-color: rgba(59, 130, 246, 0.3);
+}
+#inreview {
+  color: #f87171;
+  background-color: rgba(248, 113, 113, 0.3);
+}
+#waiting {
+  color: #8b5cf6;
+  background-color: rgba(139, 92, 246, 0.3);
+}
+.add-button-box {
+  width: 100%;
+  height: 9%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.add-button {
+  display: flex;
+  background-color: #8b5cf6;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 10px 10px 0 rgba(0, 0, 0, 0.1);
 }
