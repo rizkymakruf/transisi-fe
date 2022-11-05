@@ -60,6 +60,12 @@
   color: rgba(255, 255, 255, 0.3);
 }
 @media only screen and (max-width: 768px) {
+  .mid-left-content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+    height: 25%;
+  }
   .hi-name {
     color: #ffffff;
     font-size: 1.4rem;
@@ -114,5 +120,4 @@
   padding-left: 3rem;
   padding-right: 3rem;
   width: 100%;
-  height: 59, 99999%;
 }
