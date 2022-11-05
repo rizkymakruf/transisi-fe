@@ -1,0 +1,33 @@
+.container {
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 80vh;
+  background-image: url(asset/background-dark.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.container-left {
+  width: 50%;
+  height: auto;
+  float: left;
+  padding: 10px;
+}
+.container-right {
+  width: 50%;
+  height: 95%;
+  float: right;
+  padding: 10px;
+}
+.content-left {
+  background-color: aqua;
+}
+.content-right {
+  height: 100%;
+  background-color: bisque;
+}
+
+.second-container {
+  background-image: url(/asset/background-dark.png);
+  background-size: auto;
+}

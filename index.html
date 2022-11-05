@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transisi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              dark: "url('./asset/background-dark.png')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div
+      class="w-full h-screen bg-gray-200 flex justify-center items-center"
+      id="main-container"
+    >
+      <div
+        class="w-3/4 h-3/4 flex p-5 rounded-lg bg-dark"
+        id="second-container"
+      >
+        <div class="w-2/4 h-full">
+          <div class="w-full h-1/6 flex">
+            <div
+              class="w-8 h-8 rounded-lg bg-white/30 flex justify-center items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 text-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="w-full h-2/6 px-14">
+            <p class="text-3xl font-semibold text-white">Hi Samantha</p>
+            <p class="text-sm text-white/40">
+              Welcome back to workpspace, we miss You!
+            </p>
+            <div class="relative w-full">
+              <input
+                type="text"
+                class="w-full mt-5 p-3 pl-10 bg-white/20 rounded-lg focus:outline-none text-sm text-white"
+                placeholder="Search Task or Project..."
+              />
+              <div class="absolute left-3 top-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-3/6 bg-green-500 px-16"></div>
+        </div>
+        <div class="w-2/4 h-full bg-white rounded-lg"></div>
+      </div>
+    </div>
+  </body>
+</html>
