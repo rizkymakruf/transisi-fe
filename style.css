@@ -13,7 +13,7 @@
   height: 75%;
   border-radius: 0.5rem;
   background-image: url(./asset/background-dark.png);
-  background-size: 200%;
+  background-size: 230%;
   background-repeat: no-repeat;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 26px 40px 0 rgba(0, 0, 0, 0.19);
 }
@@ -203,4 +203,30 @@
   font-size: 0.6rem;
   line-height: 1rem;
   color: rgba(255, 255, 255, 0.5);
+}
+@media only screen and (max-width: 768px) {
+  .menu-button {
+    color: #ffffff;
+    font-size: 0.8rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 0.75rem;
+  }
+  .menu-title {
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .text-headline {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+  .second-text-headline {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.6rem;
+  }
 }
