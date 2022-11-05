@@ -273,18 +273,23 @@
   height: 2rem;
   border-radius: 9999px;
   border-width: 2px;
-  border-color: #ffffff;
 }
 #badge-1 {
   z-index: 10;
+  background-image: url(./asset/pp1.jpg);
+  background-size: 100%;
 }
 #badge-2 {
   z-index: 20;
+  background-image: url(./asset/pp2.jpg);
+  background-size: 100%;
   margin-left: -0.75rem;
   margin-left: -0.875rem;
 }
 #badge-3 {
   z-index: 30;
+  background-image: url(./asset/pp3.jpg);
+  background-size: 100%;
   margin-left: -0.75rem;
   margin-left: -0.875rem;
 }
@@ -319,10 +324,8 @@
 .check {
   display: block;
   position: relative;
-  padding-left: 35px;
-  /* margin-bottom: 12px; */
+  padding-left: 30px;
   cursor: pointer;
-  /* font-size: 22px; */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -378,7 +381,7 @@ input:checked ~ .checkmark:after {
   width: 8px;
   height: 8px;
   border: solid white;
-  border-width: 0 3px 2.5px 0;
+  border-width: 0 2px 2px 0;
   -webkit-transform: rotate(40deg);
   -ms-transform: rotate(40deg);
   transform: rotate(40deg);
